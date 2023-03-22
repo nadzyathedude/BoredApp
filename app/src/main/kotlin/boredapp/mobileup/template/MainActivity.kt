@@ -10,6 +10,7 @@ import boredapp.mobileup.template.core.koin
 import boredapp.mobileup.template.core.theme.AppTheme
 import com.arkivanov.essenty.lifecycle.asEssentyLifecycle
 import com.arkivanov.essenty.lifecycle.doOnDestroy
+import ru.chelyadinova.features.bored_activities.ui.BoredActivitiesUi
 
 // Note: rootComponent survives configuration changes due to "android:configChanges" setting in the manifest.
 class MainActivity : ComponentActivity() {
@@ -31,7 +32,7 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             AppTheme {
-                //RootUi(rootComponent)
+                BoredActivitiesUi()
             }
         }
     }
