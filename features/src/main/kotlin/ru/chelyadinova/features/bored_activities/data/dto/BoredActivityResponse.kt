@@ -1,7 +1,7 @@
-package ru.chelyadinova.features.activities.data.dto
+package ru.chelyadinova.features.bored_activities.data.dto
 
 import kotlinx.serialization.SerialName
-import ru.chelyadinova.features.activities.domain.BoredActivity
+import ru.chelyadinova.features.bored_activities.domain.BoredActivity
 
 @kotlinx.serialization.Serializable
 class BoredActivityResponse (

@@ -1,11 +1,11 @@
-package ru.chelyadinova.features.activities.data
+package ru.chelyadinova.features.bored_activities.data
 
 import boredapp.mobileup.template.core.network.NetworkApiFactory
 import me.aartikov.replica.client.ReplicaClient
 import me.aartikov.replica.single.Replica
 import me.aartikov.replica.single.ReplicaSettings
-import ru.chelyadinova.features.activities.data.dto.toDomain
-import ru.chelyadinova.features.activities.domain.BoredActivity
+import ru.chelyadinova.features.bored_activities.data.dto.toDomain
+import ru.chelyadinova.features.bored_activities.domain.BoredActivity
 import kotlin.time.Duration.Companion.seconds
 
 class BoredActivitiesRepositoryImpl(
