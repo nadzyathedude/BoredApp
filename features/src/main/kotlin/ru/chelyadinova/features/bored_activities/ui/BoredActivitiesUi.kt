@@ -3,9 +3,7 @@ package ru.chelyadinova.features.bored_activities.ui
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
+import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
@@ -24,12 +22,19 @@ fun BoredActivitiesUi(
         color = MaterialTheme.colors.background
     )
     {
-        BoresActivitiesTypesRow(types = listOf( BoredActivityType.BUSYWORK, BoredActivityType.CHARITY, BoredActivityType.COOKING))
+        BoredActivitiesTypesRow(
+            types = listOf(
+                BoredActivityType.BUSYWORK,
+                BoredActivityType.CHARITY,
+                BoredActivityType.COOKING
+            )
+        )
+        BoredActivityDescription()
     }
 }
 
 @Composable
-fun BoresActivitiesTypesRow(
+private fun BoredActivitiesTypesRow(
     types: List<BoredActivityType>,
     modifier: Modifier = Modifier
 ) {
@@ -59,3 +64,42 @@ fun BoresActivitiesTypesRow(
         }
     }
 }
+
+@Preview
+@Composable
+private fun BoredActivityDescription(
+   // activtyName: String,
+    //activityType: String,
+    //participates: Int,
+    modifier: Modifier = Modifier
+) {
+    Surface(
+        modifier = modifier.fillMaxWidth(),
+        color = MaterialTheme.colors.background,
+        elevation = 4.dp
+    ) {
+        Column(modifier = modifier.fillMaxSize()) {
+            Text(
+                modifier = modifier.padding(start = 16.dp, top = 16.dp, bottom = 10.dp),
+                //text = stringResource(id = R.string.bored_activity_name) + activtyName
+                text = stringResource(id = R.string.bored_activity_name) + "Футбол"
+            )
+            Text(
+                modifier = modifier.padding(start = 16.dp, bottom = 10.dp),
+                //text = stringResource(id = R.string.bored_activity_type) + activityType
+                text = stringResource(id = R.string.bored_activity_type) + ""
+            )
+            Text(
+                modifier = modifier.padding(start = 16.dp, bottom = 10.dp),
+                //text = stringResource(id = R.string.bored_activity_participants_amount) +participates
+                text = stringResource(id = R.string.bored_activity_participants_amount) + "3"
+            )
+
+            Button(onClick = { /*TODO*/ }, colors = ButtonDefaults.buttonColors(), ) {
+                Text(text = stringResource(id = R.string.get_new_activity))
+            }
+
+        }
+    }
+}
+

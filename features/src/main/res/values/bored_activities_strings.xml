@@ -1,7 +1,10 @@
 <resources>
-    <!-- List -->
-    <string name="bored_activities">Занятия, когда скучно</string>
-    <string name="pokemons_empty_description">Pokemons are not found</string>
+
+    <string name="bored_activities">To do when you are bored</string>
+    <string name="bored_activity_name">Activity name - </string>
+    <string name="bored_activity_type">Activity type - </string>
+    <string name="bored_activity_participants_amount">"How participants do you need - "</string>
+    <string name="get_new_activity">Get new activity idea</string>
 
     <!-- Details -->
     <string name="activities_types">Types:</string>
