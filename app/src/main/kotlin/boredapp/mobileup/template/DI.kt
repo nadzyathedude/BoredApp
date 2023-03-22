@@ -1,9 +1,10 @@
 package boredapp.mobileup.template
 
-import ru.mobileup.template.core.coreModule
-import ru.mobileup.template.features.pokemons.pokemonsModule
+import boredapp.mobileup.template.core.coreModule
+import ru.chelyadinova.features.boredActivityModule
+import ru.mobileup.template.BuildConfig
 
 val allModules = listOf(
     coreModule(BuildConfig.BACKEND_URL),
-    pokemonsModule
+    boredActivityModule
 )
