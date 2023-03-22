@@ -1,12 +1,12 @@
 package boredapp.mobileup.template.core.error_handling
 
+import boredapp.mobileup.template.core.utils.Resource
 import dev.icerock.moko.resources.desc.StringDesc
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import ru.mobileup.template.core.R
-import ru.mobileup.template.core.utils.Resource
 
 /**
  * Allows to run a function safely (with error handing).

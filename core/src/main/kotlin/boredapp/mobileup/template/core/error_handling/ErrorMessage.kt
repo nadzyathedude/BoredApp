@@ -4,13 +4,9 @@ import boredapp.mobileup.template.core.utils.Resource
 import boredapp.mobileup.template.core.utils.ResourceFormatted
 import co.touchlab.kermit.BuildConfig
 import dev.icerock.moko.resources.desc.Raw
-import dev.icerock.moko.resources.desc.Resource
-import dev.icerock.moko.resources.desc.ResourceFormatted
 import dev.icerock.moko.resources.desc.StringDesc
-import ru.mobileup.template.core.BuildConfig
 import ru.mobileup.template.core.R
-import ru.mobileup.template.core.utils.Resource
-import ru.mobileup.template.core.utils.ResourceFormatted
+
 
 /**
  * Returns human readable messages for exceptions.

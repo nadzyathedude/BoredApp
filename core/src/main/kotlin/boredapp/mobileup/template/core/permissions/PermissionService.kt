@@ -3,9 +3,9 @@ package boredapp.mobileup.template.core.permissions
 import android.content.Context
 import android.content.pm.PackageManager
 import androidx.core.content.ContextCompat
+import boredapp.mobileup.template.core.activity.ActivityProvider
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
-import ru.mobileup.template.core.activity.ActivityProvider
 
 /**
  * Allows to request permissions by a suspend function call.

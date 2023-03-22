@@ -1,12 +1,12 @@
 package boredapp.mobileup.template.core.error_handling
 
+import boredapp.mobileup.template.core.message.data.MessageService
+import boredapp.mobileup.template.core.message.domain.Message
+import boredapp.mobileup.template.core.utils.e
 import co.touchlab.kermit.Logger
 import dev.icerock.moko.resources.desc.StringDesc
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
-import ru.mobileup.template.core.message.data.MessageService
-import ru.mobileup.template.core.message.domain.Message
-import ru.mobileup.template.core.utils.e
 
 /**
  * Executes error processing: shows error messages, logs exceptions, notifies that auto logout happens.

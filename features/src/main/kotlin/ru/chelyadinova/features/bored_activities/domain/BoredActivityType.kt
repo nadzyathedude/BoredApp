@@ -1,4 +1,4 @@
-package ru.chelyadinova.features.activities.domain
+package ru.chelyadinova.features.bored_activities.domain
 
 data class BoredActivityType (val type : String) {
     companion object{

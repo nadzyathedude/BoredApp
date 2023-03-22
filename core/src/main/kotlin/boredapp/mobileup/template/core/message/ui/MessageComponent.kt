@@ -1,7 +1,7 @@
 package boredapp.mobileup.template.core.message.ui
 
+import boredapp.mobileup.template.core.message.domain.Message
 import kotlinx.coroutines.flow.StateFlow
-import ru.mobileup.template.core.message.domain.Message
 
 /**
  * A component for centralized message showing. There should be only one instance

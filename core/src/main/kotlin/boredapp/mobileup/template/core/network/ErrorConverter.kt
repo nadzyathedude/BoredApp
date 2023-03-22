@@ -1,5 +1,6 @@
 package boredapp.mobileup.template.core.network
 
+import boredapp.mobileup.template.core.error_handling.*
 import io.ktor.client.*
 import io.ktor.client.engine.*
 import io.ktor.client.network.sockets.*
@@ -9,7 +10,6 @@ import io.ktor.http.*
 import io.ktor.serialization.*
 import io.ktor.utils.io.errors.*
 import kotlinx.serialization.SerializationException
-import ru.mobileup.template.core.error_handling.*
 
 fun <T : HttpClientEngineConfig> HttpClientConfig<T>.setupErrorConverter(
     errorCollector: ErrorCollector?

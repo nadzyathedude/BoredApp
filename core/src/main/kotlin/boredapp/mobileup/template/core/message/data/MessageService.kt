@@ -1,7 +1,7 @@
 package boredapp.mobileup.template.core.message.data
 
+import boredapp.mobileup.template.core.message.domain.Message
 import kotlinx.coroutines.flow.Flow
-import ru.mobileup.template.core.message.domain.Message
 
 /**
  * A service for centralized message showing

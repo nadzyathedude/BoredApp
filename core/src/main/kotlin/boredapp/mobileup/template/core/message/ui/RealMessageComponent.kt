@@ -1,14 +1,14 @@
 package boredapp.mobileup.template.core.message.ui
 
+import boredapp.mobileup.template.core.message.data.MessageService
+import boredapp.mobileup.template.core.message.domain.Message
+import boredapp.mobileup.template.core.utils.componentScope
 import com.arkivanov.decompose.ComponentContext
 import com.arkivanov.essenty.lifecycle.doOnCreate
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
-import ru.mobileup.template.core.message.data.MessageService
-import ru.mobileup.template.core.message.domain.Message
-import ru.mobileup.template.core.utils.componentScope
 
 class RealMessageComponent(
     componentContext: ComponentContext,

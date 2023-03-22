@@ -4,12 +4,12 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.Dp
+import boredapp.mobileup.template.core.utils.LoadableState
 import com.google.accompanist.swiperefresh.SwipeRefresh
 import com.google.accompanist.swiperefresh.SwipeRefreshIndicator
 import com.google.accompanist.swiperefresh.SwipeRefreshState
 import com.google.accompanist.swiperefresh.rememberSwipeRefreshState
 import me.aartikov.replica.single.Loadable
-import ru.mobileup.template.core.utils.LoadableState
 
 /**
  * Displays Replica state ([Loadable]) with swipe-to-refresh functionality.
@@ -27,6 +27,7 @@ fun <T : Any> SwipeRefreshLceWidget(
     },
     content: @Composable (data: T, refreshing: Boolean) -> Unit
 ) {
+
 
     LceWidget(
         state = state,

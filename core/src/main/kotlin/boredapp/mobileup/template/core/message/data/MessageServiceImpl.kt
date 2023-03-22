@@ -1,8 +1,8 @@
 package boredapp.mobileup.template.core.message.data
 
+import boredapp.mobileup.template.core.message.domain.Message
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
-import ru.mobileup.template.core.message.domain.Message
 
 class MessageServiceImpl : MessageService {
 

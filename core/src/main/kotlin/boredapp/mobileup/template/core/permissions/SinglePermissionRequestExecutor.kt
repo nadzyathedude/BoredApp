@@ -4,12 +4,12 @@ import androidx.activity.ComponentActivity
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.lifecycle.lifecycleScope
+import boredapp.mobileup.template.core.activity.ActivityProvider
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.flow.first
-import ru.mobileup.template.core.activity.ActivityProvider
 
 internal class SinglePermissionRequestExecutor(
     private val activityProvider: ActivityProvider

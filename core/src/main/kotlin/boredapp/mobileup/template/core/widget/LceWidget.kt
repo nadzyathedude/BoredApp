@@ -2,8 +2,8 @@ package boredapp.mobileup.template.core.widget
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import boredapp.mobileup.template.core.utils.LoadableState
 import dev.icerock.moko.resources.compose.localized
-import ru.mobileup.template.core.utils.LoadableState
 
 /**
  * Displays Replica state ([LoadableState]).

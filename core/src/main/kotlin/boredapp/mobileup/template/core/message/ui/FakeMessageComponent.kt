@@ -1,9 +1,9 @@
 package boredapp.mobileup.template.core.message.ui
 
+import boredapp.mobileup.template.core.message.domain.Message
 import dev.icerock.moko.resources.desc.Raw
 import dev.icerock.moko.resources.desc.StringDesc
 import kotlinx.coroutines.flow.MutableStateFlow
-import ru.mobileup.template.core.message.domain.Message
 
 class FakeMessageComponent : MessageComponent {
 

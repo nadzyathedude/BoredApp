@@ -1,6 +1,7 @@
 package boredapp.mobileup.template.core.debug_tools
 
 import android.content.Context
+import boredapp.mobileup.template.core.error_handling.ServerException
 import com.chuckerteam.chucker.api.ChuckerCollector
 import com.chuckerteam.chucker.api.ChuckerInterceptor
 import com.chuckerteam.chucker.api.RetentionManager
@@ -8,7 +9,6 @@ import me.aartikov.replica.client.ReplicaClient
 import me.aartikov.replica.devtools.ReplicaDevTools
 import me.nemiron.hyperion.networkemulation.NetworkEmulatorInterceptor
 import okhttp3.Interceptor
-import ru.mobileup.template.core.error_handling.ServerException
 import java.io.IOException
 
 class RealDebugTools(

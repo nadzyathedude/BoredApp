@@ -15,9 +15,9 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Popup
 import androidx.compose.ui.window.PopupProperties
+import boredapp.mobileup.template.core.message.domain.Message
+import boredapp.mobileup.template.core.theme.AppTheme
 import dev.icerock.moko.resources.compose.localized
-import ru.mobileup.template.core.message.domain.Message
-import ru.mobileup.template.core.theme.AppTheme
 
 /**
  * Displays a [Message] as a popup at the bottom of screen.

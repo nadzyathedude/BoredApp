@@ -1,5 +1,7 @@
 package boredapp.mobileup.template.core.utils
 
+import boredapp.mobileup.template.core.error_handling.ErrorHandler
+import boredapp.mobileup.template.core.error_handling.errorMessage
 import com.arkivanov.essenty.lifecycle.Lifecycle
 import dev.icerock.moko.resources.desc.StringDesc
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -12,8 +14,6 @@ import me.aartikov.replica.keyed.KeyedReplica
 import me.aartikov.replica.single.Loadable
 import me.aartikov.replica.single.Replica
 import me.aartikov.replica.single.currentState
-import ru.mobileup.template.core.error_handling.ErrorHandler
-import ru.mobileup.template.core.error_handling.errorMessage
 
 /**
  * An analogue of [Loadable] but with localized error message.
