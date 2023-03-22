@@ -1,16 +1,22 @@
 package ru.chelyadinova.features.bored_activities.domain
 
-data class BoredActivityType (val type : String) {
-    companion object{
-        val RANDOM = BoredActivityType(type = "")
-        val EDUCATION = BoredActivityType(type = "education")
-        val RECREATIONAL = BoredActivityType(type = "recreational")
-        val SOCIAL = BoredActivityType(type = "social")
-        val DIY=  BoredActivityType(type = "diy")
-        val CHARITY = BoredActivityType(type = "charity")
-        val COOKING = BoredActivityType(type = "cooking")
-        val RELAXATION = BoredActivityType(type = "relaxation")
-        val MUSIC = BoredActivityType(type = "music")
-        val BUSYWORK = BoredActivityType(type = "busywork")
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
+@JvmInline
+value class BoredActivityTypeValue(val value: String) : Parcelable
+data class BoredActivityType(val typeValue: BoredActivityTypeValue, val typeName : String) {
+    companion object {
+        val RANDOM = BoredActivityType(typeValue = BoredActivityTypeValue(value = ""), typeName = "Random")
+        val EDUCATION = BoredActivityType(typeValue = BoredActivityTypeValue(value = "education"), typeName ="Education")
+        val RECREATIONAL = BoredActivityType(typeValue = BoredActivityTypeValue(value = "recreational"), typeName ="Recreational" )
+        val SOCIAL = BoredActivityType(typeValue = BoredActivityTypeValue(value = "social"), typeName = " Social")
+        val DIY = BoredActivityType(typeValue = BoredActivityTypeValue(value = "diy"), typeName = "DIY")
+        val CHARITY = BoredActivityType(typeValue = BoredActivityTypeValue(value = "charity"), typeName = "Charity")
+        val COOKING = BoredActivityType(typeValue = BoredActivityTypeValue(value = "cooking"), typeName = "Cooking")
+        val RELAXATION = BoredActivityType(typeValue = BoredActivityTypeValue(value = "relaxation"), typeName = "Relaxation")
+        val MUSIC = BoredActivityType(typeValue = BoredActivityTypeValue(value = "music"), typeName = "Music")
+        val BUSYWORK = BoredActivityType(typeValue = BoredActivityTypeValue(value = "busywork"), typeName = "Busy work")
     }
 }
