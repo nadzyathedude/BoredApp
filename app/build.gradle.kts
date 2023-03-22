@@ -52,12 +52,12 @@ android {
     productFlavors {
         create("dev") {
             dimension = "backend"
-            buildConfigField("String", "BACKEND_URL", "\"https://pokeapi.co/\"")
+            buildConfigField("String", "BACKEND_URL", "\"http://www.boredapi.com/\"")
         }
 
         create("prod") {
             dimension = "backend"
-            buildConfigField("String", "BACKEND_URL", "\"https://pokeapi.co/\"")
+            buildConfigField("String", "BACKEND_URL", "\"http://www.boredapi.com/\"")
         }
     }
 
